@@ -1,6 +1,18 @@
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+
 # Ruby Gems
 *.gem
 
-# Design Files
+# OS & Design Files
+.DS_Store
 *.psd
 *.ai
+
+# Local agent skills & design previews
+.agents/
+preview/
