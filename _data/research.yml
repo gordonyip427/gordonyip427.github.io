@@ -1,0 +1,96 @@
+initiatives:
+  - title: "ESA Ariel Space Mission: Machine Learning Working Group"
+    role: "ML Lead Coordinator"
+    period: "2020 to present"
+    badge: "ESA Space Mission"
+    url: "https://arielmission.space/"
+    url_label: "arielmission.space"
+    summary: >-
+      I coordinate machine learning pipeline development across the 600+ scientist ESA Ariel consortium for the mission's 1,000 planet survey.
+    highlights:
+      - "Pipelines for instrument detrending, stellar activity mitigation, and atmospheric retrieval."
+
+  - title: "The Ariel Data Challenge (NeurIPS, Kaggle & ECML PKDD)"
+    role: "Principal Investigator"
+    period: "2019 to present"
+    badge: "NeurIPS & Kaggle"
+    url: "https://www.ariel-datachallenge.space/"
+    url_label: "ariel-datachallenge.space"
+    summary: >-
+      I lead the annual competition on signal extraction and uncertainty quantification for exoplanet spectroscopy (70+ countries).
+    highlights:
+      - "Released the Atmospheric Big Challenge (ABC) Database and organised European university hackathons."
+
+  - title: "TauREx Atmospheric Retrieval Framework"
+    role: "Co-developer"
+    badge: "Open Source Software"
+    url: "https://github.com/ucl-exoplanets/TauREx3_public"
+    url_label: "GitHub"
+    summary: >-
+      I co-develop the open source TauREx Bayesian retrieval framework and its machine learning and plugin ecosystem for exoplanet spectroscopy.
+
+  - title: "ExoHack"
+    role: "Lead Organiser"
+    summary: >-
+      Hackathons for undergraduate students and above on understanding how AI can help space missions.
+
+pillars:
+  - id: "diff-tau"
+    title: "Simulation based inference & atmospheric retrieval"
+    image: "/assets/img/ink-wash-c/web/research-retrieval.webp"
+    image_small: "/assets/img/ink-wash-c/web/research-retrieval-small.webp"
+    image_width: 960
+    image_height: 720
+    image_variant: "compact"
+    image_alt: "Watercolour ink and wash illustration of a host star and transiting ringed exoplanet"
+    tags: ["Simulation based inference", "TauREx", "Variational inference", "Normalising flows", "Differentiable models"]
+    short_summary: >-
+      Simulation based inference, variational methods, normalising flows, and the TauREx retrieval framework.
+    linked_summary: >-
+      Building on the open source TauREx retrieval framework that we co-develop, we design simulation based inference (SBI), variational methods, and normalising flows alongside differentiable forward models for rapid, amortised Bayesian posterior estimation across large planetary populations.
+    summary: >-
+      Building on the open source TauREx retrieval framework that we co-develop, we design simulation based inference (SBI), variational methods, and normalising flows alongside differentiable forward models for rapid, amortised Bayesian posterior estimation across large planetary populations.
+    key_papers:
+      - "Retrieving Exoplanetary Spectra with Variational Inference and Normalising Flows (Yip et al., ApJ 2024)"
+      - "The effect of spectroscopic binning on atmospheric retrievals (Davey, Yip et al., MNRAS 2025)"
+      - "Integrating Light Curve and Atmospheric Modeling of Transiting Exoplanets (Yip et al., AJ 2020)"
+
+  - id: "chexanet"
+    title: "Neural emulation of planetary physics & chemistry"
+    image: "/assets/img/ink-wash-c/web/research-surrogates.webp"
+    image_small: "/assets/img/ink-wash-c/web/research-surrogates-small.webp"
+    image_width: 960
+    image_height: 480
+    image_variant: "panoramic"
+    image_alt: "Watercolour ink and wash illustration of a neural network graph connecting planetary atmosphere grids"
+    tags: ["Surrogate modelling", "Physics informed ML", "Graph Neural Networks", "3D simulations"]
+    short_summary: >-
+      Physics informed neural surrogates and graph architectures for atmospheric chemistry and circulation.
+    linked_summary: >-
+      We design physics informed neural surrogates and graph architectures that emulate complex radiative transfer, disequilibrium chemical networks, and multidimensional atmospheric dynamics at orders of magnitude higher speed than numerical solvers.
+    summary: >-
+      We design physics informed neural surrogates and graph architectures that emulate complex radiative transfer, disequilibrium chemical networks, and multidimensional atmospheric dynamics at orders of magnitude higher speed than numerical solvers.
+    key_papers:
+      - "Graph Neural Networks For Exoplanets Atmospheres (Vojteková, Yip et al., arXiv 2026)"
+      - "CHEXANET: accelerating disequilibrium chemistry calculations using neural networks (Vojteková, Waldmann, Yip et al., MNRAS 2025)"
+      - "Enhancing 3D planetary atmosphere simulations with surrogate modeling (Tahseen, Mendonça, Yip & Waldmann, MNRAS 2024)"
+
+  - id: "black-box"
+    title: "Interpretable & trustworthy scientific AI"
+    image: "/assets/img/ink-wash-c/web/research-interpretability.webp"
+    image_small: "/assets/img/ink-wash-c/web/research-interpretability-small.webp"
+    image_width: 960
+    image_height: 480
+    image_variant: "panoramic"
+    image_alt: "Watercolour ink and wash illustration of feature inspection inside a neural network"
+    tags: ["Explainable AI", "Uncertainty quantification", "Model diagnostics"]
+    short_summary: >-
+      Explainable AI, out of distribution diagnostics, and calibrated uncertainty quantification for scientific discovery.
+    linked_summary: >-
+      We investigate how deep learning models represent physical principles, developing explainability tools, failure mode diagnostics, and calibrated uncertainty quantification so scientific inference remains transparent and reliable under real observational noise.
+    summary: >-
+      We investigate how deep learning models represent physical principles, developing explainability tools, failure mode diagnostics, and calibrated uncertainty quantification so scientific inference remains transparent and reliable under real observational noise.
+    key_papers:
+      - "Interpreting atmospheric neural networks: insights from explainable AI (Vojteková, Nikolaou, Yip et al., RASTI 2026)"
+      - "NeurIPS Ariel Data Challenge 2024: Characterization of Exoplanetary Atmospheres (Yip et al., NeurIPS Track 2025)"
+      - "Peeking inside the Black Box: Interpreting Deep Learning Models for Retrievals (Yip et al., AJ 2021)"
