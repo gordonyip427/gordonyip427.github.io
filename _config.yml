@@ -1,87 +1,45 @@
 ### Site Settings ###
-title: Gordon Yip's Personal Website
+title: "Dr Gordon (Kai Hou) Yip"
+tagline: "Lecturer in Physics (AI) | King's College London"
 description: >-
-  Postdoc at UCL | Ariel Data Challenge PI
-baseurl: "" # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository: gordonyip427/gordonyip427.github.io # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
-remote_theme: YoussefRaafatNasry/portfolYOU
+  Academic website of Dr Gordon (Kai Hou) Yip, Lecturer in Physics (AI) at King's College London,
+  Machine Learning Lead Coordinator for the ESA Ariel Space Mission, and Principal Investigator of
+  the international Ariel Data Challenge.
+url: "https://www.gordonkhy.com"
+baseurl: ""
+repository: gordonyip427/gordonyip427.github.io
 
-### Plugins ###
-plugins:
-  - jemoji
-
-### Navbar Settings ###
-nav_exclude: # The following paths are excluded from navbar
-  - pages/tags.html
-  - pages/404.html
-  - pages/index.md
-  - pages/blog.html
-  - documentation/partials/** # For Documentation Only
-
-### Author Info ###
+### Author & Contact Info ###
 author:
-  name: Gordon
-  image: https://raw.githubusercontent.com/gordonyip427/gordonyip427.github.io/master/_images/EXOAI.jpg
-  # behance           : your_username
-  # dribbble          : your_username
-  email: kai.yip.13@ucl.ac.uk
-  # facebook          : your_username
-  github: gordonyip427
-  # gitlab            : your_username
-  # instagram         : your_username
-  # kaggle            : your_username
-  linkedin: gordonyip427
-  # medium            : your_username
-# soundcloud        : your_username
-# spotify           : your_username
-# stackoverflow     : your_user_id
-# tumblr            : your_username.tumblr.com
-# twitch            : your_username
-# twitter           : your_username
-# vimeo             : your_username
-# youtube           : your_channel_name
+  name: "Dr Gordon (Kai Hou) Yip"
+  short_name: "Gordon Yip"
+  pub_name: "Kai Hou Yip"
+  role: "Lecturer in Physics (AI)"
+  institution: "King's College London"
+  department: "Department of Physics, Faculty of Natural, Mathematical & Engineering Sciences"
+  office: "Room S7.20, Strand Campus, Strand, London, WC2R 2LS, UK"
+  email: "kai_hou.yip@kcl.ac.uk"
+  image: "/assets/img/profile.jpg"
+  github: "gordonyip427"
+  linkedin: "gordonyip427"
+  kcl_profile: "https://www.kcl.ac.uk/people/gordon-yip"
+  ads_library: "https://ui.adsabs.harvard.edu/user/libraries/L5aBgIFkT8WN4f21uxjIOg"
+  ariel_challenge: "https://www.ariel-datachallenge.space/"
+  ariel_mission: "https://arielmission.space/"
 
-### Posts ###
-permalink: /blog/:title
-
-### Collections ###
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name
-  elements: # For Documentation Only
-    output: true # For Documentation Only
-
-### Disqus ###
-disqus: your-short-name-disqus # Your website Shortname on disqus
-
-### Analytics ###
-analytics:
-  enabled: false # Set true to enable analytics
-  google:
-    tracking_id: your-google-tracking-id
-
-### Defaults for collections ###
-defaults:
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "page"
-  - scope: # For Documentation Only
-      path: "" # For Documentation Only
-      type: "elements" # For Documentation Only
-    values: # For Documentation Only
-      layout: "element" # For Documentation Only
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      comments: false # Set to true to enable disqus comments
+### Build Settings ###
+markdown: kramdown
+permalink: pretty
 
 ### Exclude from processing ###
 exclude:
   - README.md
   - CONTRIBUTING.md
   - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - serve.py
+  - vendor/
+  - .agents/
+  - preview/
   - "*.log"
