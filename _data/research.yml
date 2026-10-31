@@ -24,7 +24,7 @@ initiatives:
   - title: "TauREx Atmospheric Retrieval Framework"
     role: "Co-developer"
     badge: "Open Source Software"
-    url: "https://github.com/ucl-exoplanets/TauREx3_public"
+    url: "https://github.com/taurex-space"
     url_label: "GitHub"
     summary: >-
       I co-develop the open source TauREx Bayesian retrieval framework and its machine learning and plugin ecosystem for exoplanet spectroscopy.
