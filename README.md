@@ -61,10 +61,9 @@ Structured data lives in `_data/*.yml`, while introductory prose, application st
 │   └── page.html               # Standard interior page header wrapper
 └── assets/
     ├── css/style.css           # Site stylesheet (light/dark themes, responsive layout, print styles)
-    ├── img/
-    │   ├── profile.jpg         # Profile portrait
-    │   └── painted-paper/      # Painted-paper hero backdrops (light/dark) and research theme illustrations
-    └── pdf/KHY_academicCV.pdf  # Downloadable PDF version of your CV
+    └── img/
+        ├── profile.jpg         # Profile portrait
+        └── ink-wash-c/         # Ink-wash-c hero backdrops (light/dark) and research theme illustrations
 ```
 
 > **Note on data files vs. page templates:**
@@ -117,7 +116,6 @@ Open [`_data/news.yml`](_data/news.yml) and add a new item at the top of the fil
 
 ### D. Updating Your CV or Profile Photo
 - **Web CV:** Edit [`_data/cv.yml`](_data/cv.yml) (and the opening biography paragraph in [`pages/cv.md`](pages/cv.md)).
-- **Downloadable PDF CV:** Replace `assets/pdf/KHY_academicCV.pdf` whenever you update the web CV so the downloadable PDF stays in sync with `/cv/`.
 - **Profile Photo:** Replace `assets/img/profile.jpg`.
 
 ---
