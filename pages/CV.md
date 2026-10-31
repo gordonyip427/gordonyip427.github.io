@@ -14,19 +14,12 @@ permalink: /cv/
     <h2 class="block-heading">Appointments &amp; education</h2>
   </div>
   <ul class="one-line-list">
-    <li class="one-line-item">
-      <span class="item-text"><strong>Full curriculum vitae &amp; institutional profile.</strong> Download complete academic CV (PDF) or view official King's College London faculty directory entry.</span>
-      <span class="item-links">
-        <a class="pill-link" href="/assets/pdf/KHY_academicCV.pdf" target="_blank" rel="noopener">Download CV (PDF) &nearr;</a>
-        <a class="pill-link" href="{{ site.author.kcl_profile }}" target="_blank" rel="noopener">View King's profile &nearr;</a>
-      </span>
-    </li>
     {% for item in site.data.cv.appointments %}
     <li class="one-line-item">
       <span class="item-text"><strong>{{ item.role }}</strong>, {{ item.institution }} ({{ item.period }}). {{ item.department }}</span>
       <span class="item-links">
         {% if item.institution == "King's College London" %}
-        <a class="pill-link" href="{{ site.author.kcl_profile }}" target="_blank" rel="noopener">KCL &nearr;</a>
+        <a class="pill-link" href="{{ site.author.kcl_profile }}" target="_blank" rel="noopener">King's profile &nearr;</a>
         {% endif %}
       </span>
     </li>
