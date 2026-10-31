@@ -1,0 +1,72 @@
+[
+  {
+    "file": "web/hero-light.webp",
+    "width": 1600,
+    "height": 900,
+    "bytes": 130504,
+    "transparent": false
+  },
+  {
+    "file": "web/hero-light-small.webp",
+    "width": 800,
+    "height": 450,
+    "bytes": 39282,
+    "transparent": false
+  },
+  {
+    "file": "web/hero-dark.webp",
+    "width": 1600,
+    "height": 900,
+    "bytes": 150934,
+    "transparent": false
+  },
+  {
+    "file": "web/hero-dark-small.webp",
+    "width": 800,
+    "height": 450,
+    "bytes": 44770,
+    "transparent": false
+  },
+  {
+    "file": "web/research-retrieval.webp",
+    "width": 960,
+    "height": 720,
+    "bytes": 193034,
+    "transparent": true
+  },
+  {
+    "file": "web/research-retrieval-small.webp",
+    "width": 480,
+    "height": 360,
+    "bytes": 57506,
+    "transparent": true
+  },
+  {
+    "file": "web/research-surrogates.webp",
+    "width": 960,
+    "height": 480,
+    "bytes": 121150,
+    "transparent": true
+  },
+  {
+    "file": "web/research-surrogates-small.webp",
+    "width": 480,
+    "height": 240,
+    "bytes": 38042,
+    "transparent": true
+  },
+  {
+    "file": "web/research-interpretability.webp",
+    "width": 960,
+    "height": 480,
+    "bytes": 116266,
+    "transparent": true
+  },
+  {
+    "file": "web/research-interpretability-small.webp",
+    "width": 480,
+    "height": 240,
+    "bytes": 40570,
+    "transparent": true
+  }
+]
