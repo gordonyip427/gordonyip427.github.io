@@ -1,0 +1,72 @@
+appointments:
+  - role: "Lecturer in Physics (AI)"
+    institution: "King's College London"
+    department: "Department of Physics, Faculty of Natural, Mathematical & Engineering Sciences"
+    period: "2025 to present"
+
+  - role: "Senior Research Fellow & Associate Lecturer"
+    institution: "University College London"
+    department: "Department of Physics and Astronomy"
+    period: "2024 to 2025"
+
+  - role: "Postdoctoral Research Fellow"
+    institution: "University College London"
+    department: "Department of Physics and Astronomy"
+    period: "2021 to 2024"
+
+education:
+  - degree: "Ph.D. in Data Intensive Science (Astrophysics)"
+    institution: "University College London"
+    period: "2017 to 2021"
+    details: >-
+      Thesis: "Expect the Unexpected: Deciphering Exoplanetary Signals with Machine Learning Techniques." Supervised by Prof. Ingo Waldmann and Prof. Giovanna Tinetti.
+
+  - degree: "M.Sci. in Astrophysics (First Class Honours)"
+    institution: "University College London"
+    period: "2013 to 2017"
+
+teaching:
+  - code: "4CCP1987"
+    title: "Introduction to Astrophysics"
+    role: "Lecturer"
+    institution: "Department of Physics, King's College London"
+    period: "2025/26 to present"
+
+  - title: "Programming in Action"
+    role: "Lecturer"
+    institution: "Department of Physics, King's College London"
+    period: "2025/26 to present"
+
+service:
+  - role: "Guest editor, Ariel: mission, science & community engagement"
+    org: "RAS Techniques and Instruments (RASTI), Oxford University Press"
+    period: "2024 to present"
+    url: "https://academic.oup.com/rasti/pages/ariel-mission"
+    url_label: "RASTI special issue"
+
+leadership:
+  - title: "Machine Learning Lead Coordinator, ESA Ariel Space Mission"
+    period: "2020 to present"
+
+  - title: "Principal Investigator & Lead Organiser, The Ariel Data Challenge (NeurIPS, ECML PKDD & Kaggle)"
+    period: "2019 to present"
+
+supervision:
+  - name: "Vojteková & Tahseen"
+    period: "2027"
+    detail: "PhD students (jointly supervised)"
+  - name: "Davey"
+    period: "2026"
+    detail: "PhD student (jointly supervised)"
+  - name: "Pan & You"
+    period: "2022 to 2023"
+    detail: "MSci Astrophysics students, University College London"
+  - name: "Kohlhofer"
+    period: "2022 to 2023"
+    detail: "MSc student, University of Vienna"
+  - name: "Ballard"
+    period: "2021 to 2022"
+    detail: "MSci Astrophysics student, University College London"
+  - name: "Ignat & Skaf"
+    period: "2019 to 2020"
+    detail: "MSci students, University College London & Imperial College London"
