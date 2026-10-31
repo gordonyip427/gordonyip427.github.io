@@ -1,0 +1,98 @@
+---
+layout: default
+title: Home
+description: "Dr Gordon (Kai Hou) Yip, Lecturer in Physics (AI) at King's College London. Research in Bayesian inference, differentiable atmospheric models, atmospheric emulation, and scientific AI for JWST and the ESA Ariel mission."
+permalink: /
+---
+
+<div class="hero-screen">
+  <div class="hero-scrim" aria-hidden="true"></div>
+
+  <header class="top-header">
+    <a class="brand-link active" href="/" aria-current="page">{{ site.author.short_name }}</a>
+    <nav class="top-nav top-nav-pill" id="primaryNav" aria-label="Primary">
+      <a href="/research/">Research</a>
+      <a href="/publications/">Publications</a>
+      <a href="/opportunities/">Opportunities</a>
+      <a href="/cv/">About &amp; CV</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+        <span class="theme-label" id="themeLabel">Light</span>
+      </button>
+    </nav>
+    <div class="mobile-controls">
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+        <span class="theme-label">Light</span>
+      </button>
+      <button class="mobile-menu-btn" id="mobileMenuToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span class="menu-bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" aria-hidden="true">
+    <nav class="mobile-drawer-nav">
+      <a href="/" class="active" aria-current="page" style="--item-idx: 0;">Home</a>
+      <a href="/research/" style="--item-idx: 1;">Research</a>
+      <a href="/publications/" style="--item-idx: 2;">Publications</a>
+      <a href="/opportunities/" style="--item-idx: 3;">Opportunities</a>
+      <a href="/cv/" style="--item-idx: 4;">About &amp; CV</a>
+    </nav>
+  </aside>
+
+  <main class="hero-main" id="main-content">
+    <div class="folio-block">
+      <div class="folio-top">
+        <img src="{{ site.author.image }}" alt="Portrait of {{ site.author.name }}, {{ site.author.role }} at {{ site.author.institution }}" class="portrait" width="64" height="64">
+        <div>
+          <h1 class="hero-name">{{ site.author.short_name }}</h1>
+          <p class="hero-role">{{ site.author.role }} &middot; {{ site.author.institution }}</p>
+        </div>
+      </div>
+
+      <p class="hero-bio">
+        I work at the intersection of astrophysics and machine learning, designing physics informed neural emulators and Bayesian retrieval frameworks for exoplanet spectroscopy. Alongside my group at King's, I serve as Machine Learning Lead Coordinator for the ESA Ariel Space Mission and Principal Investigator of the Ariel Data Challenge, publishing as Kai Hou Yip.
+      </p>
+
+      <hr class="folio-divider">
+
+      <p class="hero-phd-line">
+        I welcome PhD enquiries for October 2027 entry in physics, astronomy, computer science, or mathematics; a finished research proposal is not required.
+      </p>
+
+      <div class="hero-actions">
+        <a href="/opportunities/" class="cta-button">
+          <span>Explore PhD opportunities</span>
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+
+        <div class="icon-bar" aria-label="Academic and social links">
+          <!-- 1. NASA ADS -->
+          <a class="icon-link" href="{{ site.author.ads_library }}" target="_blank" rel="noopener" aria-label="NASA ADS" title="NASA ADS">
+            <svg viewBox="0 0 256 256" aria-hidden="true"><path d="m231.65 194.55l-33.19-157.8a16 16 0 0 0-19-12.39l-46.81 10.06a16.08 16.08 0 0 0-12.3 19l33.19 157.8A16 16 0 0 0 169.16 224a16.3 16.3 0 0 0 3.38-.36l46.81-10.06a16.09 16.09 0 0 0 12.3-19.03M136 50.15v-.09l46.8-10l3.33 15.87L139.33 66Zm6.62 31.47l46.82-10.05l3.34 15.9L146 97.53Zm6.64 31.57l46.82-10.06l13.3 63.24l-46.82 10.06ZM216 197.94l-46.8 10l-3.33-15.87l46.8-10.07l3.33 15.85zM104 32H56a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h48a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16M56 48h48v16H56Zm0 32h48v96H56Zm48 128H56v-16h48z"/></svg>
+          </a>
+          <!-- 2. GitHub -->
+          <a class="icon-link" href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M208.3 75.68A59.74 59.74 0 0 0 202.93 28a8 8 0 0 0-6.93-4a59.75 59.75 0 0 0-48 24h-24a59.75 59.75 0 0 0-48-24a8 8 0 0 0-6.93 4a59.78 59.78 0 0 0-5.38 47.68A58.14 58.14 0 0 0 56 104v8a56.06 56.06 0 0 0 48.44 55.47A39.8 39.8 0 0 0 96 192v8H72a24 24 0 0 1-24-24a40 40 0 0 0-40-40a8 8 0 0 0 0 16a24 24 0 0 1 24 24a40 40 0 0 0 40 40h24v16a8 8 0 0 0 16 0v-40a24 24 0 0 1 48 0v40a8 8 0 0 0 16 0v-40a39.8 39.8 0 0 0-8.44-24.53A56.06 56.06 0 0 0 216 112v-8a58 58 0 0 0-7.7-28.32M200 112a40 40 0 0 1-40 40h-48a40 40 0 0 1-40-40v-8a41.74 41.74 0 0 1 6.9-22.48a8 8 0 0 0 1.1-7.69a43.8 43.8 0 0 1 .79-33.58a43.88 43.88 0 0 1 32.32 20.06a8 8 0 0 0 6.71 3.69h32.35a8 8 0 0 0 6.74-3.69a43.87 43.87 0 0 1 32.32-20.06a43.8 43.8 0 0 1 .77 33.58a8.09 8.09 0 0 0 1 7.65a41.76 41.76 0 0 1 7 22.52Z"/></svg>
+          </a>
+          <!-- 3. Email -->
+          <a class="icon-link" href="mailto:{{ site.author.email }}" aria-label="Email" title="Email {{ site.author.email }}">
+            <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M224 48H32a8 8 0 0 0-8 8v136a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a8 8 0 0 0-8-8m-20.57 16L128 133.15L52.57 64ZM216 192H40V74.19l82.59 75.71a8 8 0 0 0 10.82 0L216 74.19V192Z"/></svg>
+          </a>
+          <!-- 4. LinkedIn -->
+          <a class="icon-link" href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M216 24H40a16 16 0 0 0-16 16v176a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V40a16 16 0 0 0-16-16m0 192H40V40h176v176ZM96 112v64a8 8 0 0 1-16 0v-64a8 8 0 0 1 16 0m88 28v36a8 8 0 0 1-16 0v-36a20 20 0 0 0-40 0v36a8 8 0 0 1-16 0v-64a8 8 0 0 1 15.79-1.78A36 36 0 0 1 184 140m-84-56a12 12 0 1 1-12-12a12 12 0 0 1 12 12"/></svg>
+          </a>
+          <!-- 5. King's profile -->
+          <a class="icon-link" href="{{ site.author.kcl_profile }}" target="_blank" rel="noopener" aria-label="King's College London profile" title="King's College London profile">
+            <svg viewBox="0 0 256 256" aria-hidden="true"><path d="M240 208h-16V96a16 16 0 0 0-16-16h-64V32a16 16 0 0 0-24.88-13.32L39.12 72A16 16 0 0 0 32 85.34V208H16a8 8 0 0 0 0 16h224a8 8 0 0 0 0-16M208 96v112h-64V96ZM48 85.34L128 32v176H48ZM112 112v16a8 8 0 0 1-16 0v-16a8 8 0 1 1 16 0m-32 0v16a8 8 0 0 1-16 0v-16a8 8 0 1 1 16 0m0 56v16a8 8 0 0 1-16 0v-16a8 8 0 0 1 16 0m32 0v16a8 8 0 0 1-16 0v-16a8 8 0 0 1 16 0"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="hero-footer">
+    <span>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} &middot; Department of Physics, {{ site.author.institution }}</span>
+    <span>Room S7.20, Strand Campus, London WC2R 2LS &middot; <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> &middot; <a href="https://www.kcl.ac.uk/terms" target="_blank" rel="noopener">Terms &amp; privacy</a></span>
+  </footer>
+</div>
