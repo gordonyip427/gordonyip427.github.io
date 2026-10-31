@@ -23,12 +23,6 @@ permalink: /opportunities/
     <li class="one-line-item">
       <span class="item-text"><strong>Supervisory style.</strong> You will be part of a supportive team where everyone explores their own direction. Rather than micromanaging, I give you the space and guidance to make the project your own, and encourage a healthy balance with proper time to rest.</span>
     </li>
-    <li class="one-line-item">
-      <span class="item-text"><strong>Formal admission.</strong> Department of Physics postgraduate research entry requirements and application portal at King's College London.</span>
-      <span class="item-links">
-        <a class="pill-link" href="https://www.kcl.ac.uk/physics/postgraduate/research-courses" target="_blank" rel="noopener">KCL Physics admissions &nearr;</a>
-      </span>
-    </li>
   </ul>
 </section>
 
