@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<header class="photo-strip">
+  <div class="strip-scrim" aria-hidden="true"></div>
+  <div class="strip-top">
+    <a class="brand-link" href="/">{{ site.author.short_name }}</a>
+    <nav class="top-nav top-nav-pill" id="primaryNav" aria-label="Primary">
+      <a href="/research/" class="{% if page.url contains '/research' %}active{% endif %}">Research</a>
+      <a href="/publications/" class="{% if page.url contains '/publications' %}active{% endif %}">Publications</a>
+      <a href="/opportunities/" class="{% if page.url contains '/opportunities' %}active{% endif %}">Opportunities</a>
+      <a href="/cv/" class="{% if page.url contains '/cv' %}active{% endif %}">About &amp; CV</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+        <span class="theme-label" id="themeLabel">Light</span>
+      </button>
+    </nav>
+    <div class="mobile-controls">
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+        <span class="theme-label">Light</span>
+      </button>
+      <button class="mobile-menu-btn" id="mobileMenuToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span class="menu-bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+  <div class="strip-title-wrap">
+    {% if page.eyebrow %}
+      <span class="strip-eyebrow">{{ page.eyebrow }}</span>
+    {% endif %}
+    <h1 class="page-title">{{ page.title }}</h1>
+  </div>
+</header>
+
+<aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" aria-hidden="true">
+  <nav class="mobile-drawer-nav">
+    <a href="/" style="--item-idx: 0;">Home</a>
+    <a href="/research/" class="{% if page.url contains '/research' %}active{% endif %}" style="--item-idx: 1;">Research</a>
+    <a href="/publications/" class="{% if page.url contains '/publications' %}active{% endif %}" style="--item-idx: 2;">Publications</a>
+    <a href="/opportunities/" class="{% if page.url contains '/opportunities' %}active{% endif %}" style="--item-idx: 3;">Opportunities</a>
+    <a href="/cv/" class="{% if page.url contains '/cv' %}active{% endif %}" style="--item-idx: 4;">About &amp; CV</a>
+  </nav>
+</aside>
+
+<main class="subpage-main" id="main-content">
+  {% if page.subtitle %}
+    <p class="lead-paragraph">{{ page.subtitle }}</p>
+  {% endif %}
+
+  {{ content }}
+</main>
+
+<footer class="subpage-footer">
+  <span>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} &middot; Department of Physics, {{ site.author.institution }}</span>
+  <span>Room S7.20, Strand Campus, London WC2R 2LS &middot; <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> &middot; <a href="https://www.kcl.ac.uk/terms" target="_blank" rel="noopener">Terms &amp; privacy</a></span>
+</footer>
