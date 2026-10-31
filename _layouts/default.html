@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.title != "Home" %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | {{ site.tagline }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta property="og:title" content="{% if page.title and page.title != 'Home' %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.author.image }}">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('gky_theme');
+        if (saved === 'dark' || saved === 'light') {
+          document.documentElement.setAttribute('data-theme', saved);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css?v=20261031f">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  {{ content }}
+
+  <script>
+    function syncThemeLabel() {
+      var labels = document.querySelectorAll('.theme-label');
+      var current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var text = current === 'dark' ? 'Dark' : 'Light';
+      for (var i = 0; i < labels.length; i++) {
+        labels[i].textContent = text;
+      }
+    }
+
+    function toggleTheme() {
+      var root = document.documentElement;
+      var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      syncThemeLabel();
+      try {
+        localStorage.setItem('gky_theme', next);
+      } catch (e) {}
+    }
+
+    (function() {
+      syncThemeLabel();
+
+      var themeButtons = document.querySelectorAll('.theme-toggle');
+      for (var t = 0; t < themeButtons.length; t++) {
+        themeButtons[t].addEventListener('click', toggleTheme);
+      }
+
+      var menuBtn = document.getElementById('mobileMenuToggle');
+      var mobileDrawer = document.getElementById('mobileDrawer');
+      if (menuBtn && mobileDrawer) {
+        menuBtn.addEventListener('click', function() {
+          var isOpen = document.body.classList.toggle('menu-open');
+          menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          mobileDrawer.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+        });
+        var drawerLinks = mobileDrawer.querySelectorAll('a');
+        for (var d = 0; d < drawerLinks.length; d++) {
+          drawerLinks[d].addEventListener('click', function() {
+            document.body.classList.remove('menu-open');
+            menuBtn.setAttribute('aria-expanded', 'false');
+            mobileDrawer.setAttribute('aria-hidden', 'true');
+          });
+        }
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && document.body.classList.contains('menu-open')) {
+            document.body.classList.remove('menu-open');
+            menuBtn.setAttribute('aria-expanded', 'false');
+            mobileDrawer.setAttribute('aria-hidden', 'true');
+            menuBtn.focus();
+          }
+        });
+      }
+
+      var sections = document.querySelectorAll('.folio-block, .lead-paragraph, .ledger-block');
+      if (!sections.length) return;
+      for (var j = 0; j < sections.length; j++) {
+        sections[j].classList.add('reveal-section');
+      }
+      if (!('IntersectionObserver' in window)) {
+        for (var i = 0; i < sections.length; i++) {
+          sections[i].classList.add('is-visible');
+        }
+        return;
+      }
+      var observer = new IntersectionObserver(function(entries, obs) {
+        for (var k = 0; k < entries.length; k++) {
+          if (entries[k].isIntersecting) {
+            entries[k].target.classList.add('is-visible');
+            obs.unobserve(entries[k].target);
+          }
+        }
+      }, { threshold: 0.06, rootMargin: '0px 0px -24px 0px' });
+      for (var m = 0; m < sections.length; m++) {
+        observer.observe(sections[m]);
+      }
+    })();
+  </script>
+</body>
+</html>
