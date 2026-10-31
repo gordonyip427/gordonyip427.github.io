@@ -1,0 +1,45 @@
+phd_positions:
+  - code: "KCL NMES Faculty"
+    title: "King's NMES Faculty PhD studentship (UK Home students)"
+    status: "Open for enquiries"
+    institution: "Department of Physics, King's College London"
+    supervisor: "Dr Gordon (Kai Hou) Yip"
+    start_date: "October 2027 entry"
+    one_line: "Sponsored by the Faculty of Natural, Mathematical & Engineering Sciences (NMES) for eligible UK Home students."
+    funding_note: >-
+      Sponsored by the Faculty of Natural, Mathematical & Engineering Sciences (NMES) at King's College London for eligible UK Home students.
+    email_subject: "Prospective%20PhD%20enquiry%20(KCL%20NMES)"
+
+  - code: "K-CSC Scholarship"
+    title: "King's and China Scholarship Council PhD scholarship (K-CSC)"
+    status: "Open for enquiries"
+    institution: "Department of Physics, King's College London"
+    supervisor: "Dr Gordon (Kai Hou) Yip"
+    start_date: "October 2027 entry"
+    funding_code: "2728-KCSC"
+    details_checked: "28 October 2026"
+    one_line: "Full tuition + CSC stipend for Chinese nationals; King's deadline 1 Jan 2027 (supporting docs 15 Jan, CSC 10 to 31 Mar 2027)."
+    funding_note: >-
+      King's covers full tuition fees; CSC provides living stipend, return airfare, and visa and health cover. Admission, nomination, and CSC award are separate stages.
+    timeline:
+      - stage: "King's deadline"
+        detail: "1 January 2027, 23:59 UK time (code 2728-KCSC)"
+      - stage: "Supporting documents"
+        detail: "15 January 2027, 23:59 UK time"
+      - stage: "Nomination outcome"
+        detail: "On or shortly after 9 March 2027"
+      - stage: "CSC application"
+        detail: "10 to 31 March 2027"
+    official_url: "https://www.kcl.ac.uk/study/funding/funding-opportunities/kings-china-scholarship-council-phd-scholarship-programme-k-csc"
+    official_url_label: "Official K-CSC page"
+    email_subject: "Prospective%20PhD%20enquiry%20(K-CSC)"
+    summary: >-
+      Joint scholarship for Chinese nationals applying for October 2027 entry. Contact me well before 1 January 2027 to agree on a proposal.
+
+other_opportunities:
+  - role: "KCL MSci, MSc & summer projects"
+    description: >-
+      King's students interested in projects on atmospheric retrieval, emulation, or the Ariel Data Challenge can email me or visit Room S7.20.
+  - role: "Visiting PhD researchers"
+    description: >-
+      I welcome visiting doctoral researchers (including CSC Visiting PhD fellows) working on machine learning and exoplanet atmospheres.
