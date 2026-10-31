@@ -1,0 +1,177 @@
+- year: 2026
+  items:
+    - authors: "Changeat, Q., Lagage, P.-O., Tinetti, G., Charnay, B., Cowan, N. B., Danielski, C., Ducrot, E., Dyrek, A., Edwards, B., Ikoma, M., Lueftinger, T., Micela, G., Morello, G., Panic, O., Pascale, E., Robert, S., Venot, O., Barstow, J. K., Bocchieri, A., Cho, J. Y-K., Cloutier, R., Coustenis, A., Dang, L., Fujii, Y., Ito, Y., Lavvas, P., Miguel, Y., Mugnai, L. V., <strong>Yip, K. H.</strong>, & Zak, J."
+      year: "2026"
+      title: "On the synergetic use of Ariel and JWST for exoplanet atmospheric science"
+      venue: "RAS Techniques and Instruments (RASTI), rzag085 (accepted manuscript, published online 27 October 2026)"
+      url: "https://doi.org/10.1093/rasti/rzag085"
+      url_label: "DOI"
+
+    - authors: "Vojteková, A., <strong>Yip, K. H.</strong>, Waldmann, I. P., Nikolaou, N., Venot, O., Al-Refaie, A. F., & Merín, B."
+      year: "2026"
+      title: "Graph Neural Networks For Exoplanets Atmospheres"
+      venue: "arXiv e-prints, arXiv:2609.17894 [astro-ph.IM]"
+      url: "https://arxiv.org/abs/2609.17894"
+      url_label: "arXiv"
+
+    - authors: "Vojteková, A., Nikolaou, N., <strong>Yip, K. H.</strong>, Venot, O., Al-Refaie, A. F., Merín, B., & Waldmann, I. P."
+      year: "2026"
+      title: "Interpreting atmospheric neural networks: insights from explainable AI"
+      venue: "RAS Techniques and Instruments (RASTI), 5, rzag002"
+      short_venue: "Vojteková, Nikolaou, Yip et al., RASTI (2026)"
+      url: "https://doi.org/10.1093/rasti/rzag002"
+      url_label: "DOI"
+
+- year: 2025
+  items:
+    - authors: "<strong>Yip, K. H.</strong>, Mugnai, L. V., Coates, R. L., et al."
+      year: "2025"
+      title: "NeurIPS Ariel Data Challenge 2024: Characterization of Exoplanetary Atmospheres Using a Data-Centric Approach"
+      venue: "NeurIPS Competition Track / arXiv:2505.08940"
+      url: "https://arxiv.org/abs/2505.08940"
+      url_label: "arXiv"
+
+    - authors: "Saba, A., Thompson, A., <strong>Yip, K. H.</strong>, Ma, S., Tsiaras, A., Al-Refaie, A. F., & Tinetti, G."
+      year: "2025"
+      title: "A Population Analysis of 20 Exoplanets Observed from Optical to Near-infrared Wavelengths with the Hubble Space Telescope: Evidence for Widespread Stellar Contamination"
+      venue: "The Astrophysical Journal Supplement Series (ApJS), 276(2), 70"
+      url: "https://doi.org/10.3847/1538-4365/ad98eb"
+      url_label: "DOI"
+
+    - authors: "Vojteková, A., Waldmann, I. P., <strong>Yip, K. H.</strong>, Merín, B., Al-Refaie, A. F., & Venot, O."
+      year: "2025"
+      title: "CHEXANET: a novel approach to fast-tracking disequilibrium chemistry calculations for exoplanets using neural networks"
+      venue: "Monthly Notices of the Royal Astronomical Society (MNRAS), 538(3), 1690–1719"
+      short_venue: "Vojteková, Waldmann, Yip et al., MNRAS (2025)"
+      url: "https://doi.org/10.1093/mnras/staf297"
+      url_label: "DOI"
+      homepage_selected: true
+      contribution: "Neural network emulator for exoplanet disequilibrium chemistry calculations."
+
+    - authors: "Davey, J. J., <strong>Yip, K. H.</strong>, Al-Refaie, A. F., & Waldmann, I. P."
+      year: "2025"
+      title: "The effect of spectroscopic binning on atmospheric retrievals"
+      venue: "Monthly Notices of the Royal Astronomical Society (MNRAS), 536(3), 2618–2644"
+      url: "https://doi.org/10.1093/mnras/stae2723"
+      url_label: "DOI"
+
+- year: 2024
+  items:
+    - authors: "<strong>Yip, K. H.</strong>, Changeat, Q., Al-Refaie, A. F., & Waldmann, I. P."
+      year: "2024"
+      title: "To Sample or Not To Sample: Retrieving Exoplanetary Spectra with Variational Inference and Normalising Flows"
+      venue: "The Astrophysical Journal (ApJ), 961(1), 30"
+      short_venue: "Yip et al., The Astrophysical Journal (2024)"
+      url: "https://arxiv.org/abs/2205.07037"
+      url_label: "ApJ / arXiv"
+      homepage_selected: true
+      contribution: "Exoplanet atmospheric retrieval using variational inference and normalising flows."
+
+    - authors: "Tahseen, T. P. A., Mendonça, J. M., <strong>Yip, K. H.</strong>, & Waldmann, I. P."
+      year: "2024"
+      title: "Enhancing 3D planetary atmosphere simulations with advanced surrogate modeling"
+      venue: "Monthly Notices of the Royal Astronomical Society (MNRAS), 535(3), 2210"
+      url: "https://doi.org/10.1093/mnras/stae2468"
+      url_label: "DOI"
+
+- year: 2023
+  items:
+    - authors: "Changeat, Q., & <strong>Yip, K. H.</strong>"
+      year: "2023"
+      title: "ESA-Ariel Data Challenge NeurIPS 2022: introduction to exo-atmospheric studies and presentation of the Atmospheric Big Challenge (ABC) Database"
+      venue: "RAS Techniques and Instruments (RASTI), 2(1), 45–61"
+      url: "https://arxiv.org/abs/2206.14633"
+      url_label: "RASTI / arXiv"
+
+    - authors: "Edwards, B., Changeat, Q., Tsiaras, A., <strong>Yip, K. H.</strong>, Al-Refaie, A. F., Anisman, L., ... & Tinetti, G."
+      year: "2023"
+      title: "Exploring the Ability of HST WFC3 G141 to Uncover Trends in Populations of Exoplanet Atmospheres Through a Homogeneous Transmission Survey of 70 Gaseous Planets"
+      venue: "The Astrophysical Journal Supplement Series (ApJS), 269(1), 31 (arXiv:2211.00649)"
+      url: "https://arxiv.org/abs/2211.00649"
+      url_label: "arXiv / ApJS"
+
+- year: 2022
+  items:
+    - authors: "<strong>Yip, K. H.</strong>, Waldmann, I. P., Changeat, Q., Morvan, M., Al-Refaie, A. F., Edwards, B., ... & Tinetti, G."
+      year: "2022"
+      title: "ESA-Ariel Data Challenge NeurIPS 2022: Inferring Physical Properties of Exoplanets From Next-Generation Telescopes"
+      venue: "arXiv e-prints / NeurIPS 2022 Competition Track (arXiv:2206.14642)"
+      url: "https://arxiv.org/abs/2206.14642"
+      url_label: "arXiv"
+
+    - authors: "Changeat, Q., Edwards, B., Al-Refaie, A. F., Tsiaras, A., Skinner, J. W., Cho, J. Y. K., <strong>Yip, K. H.</strong>, ... & Tinetti, G."
+      year: "2022"
+      title: "Five Key Exoplanet Questions Answered via the Analysis of 25 Hot-Jupiter Atmospheres in Eclipse"
+      venue: "The Astrophysical Journal Supplement Series (ApJS), 260(1), 3"
+      url: "https://doi.org/10.3847/1538-4365/ac5cc2"
+      url_label: "DOI"
+
+    - authors: "Nikolaou, N., Waldmann, I. P., Tsiaras, A., Morvan, M., Edwards, B., <strong>Yip, K. H.</strong>, ... & Morik, K."
+      year: "2022"
+      title: "Lessons Learned from the 1st ARIEL Machine Learning Challenge: Correcting Transiting Exoplanet Light Curves for Stellar Spots"
+      venue: "RAS Techniques and Instruments (arXiv:2010.15996)"
+      url: "https://arxiv.org/abs/2010.15996"
+      url_label: "arXiv"
+
+- year: 2021
+  items:
+    - authors: "<strong>Yip, K. H.</strong>, Changeat, Q., Nikolaou, N., Morvan, M., Edwards, B., Waldmann, I. P., & Tinetti, G."
+      year: "2021"
+      title: "Peeking inside the Black Box: Interpreting Deep-learning Models for Exoplanet Atmospheric Retrievals"
+      venue: "The Astronomical Journal (AJ), 162(5), 195"
+      short_venue: "Yip et al., The Astronomical Journal (2021)"
+      url: "https://doi.org/10.3847/1538-3881/ac1744"
+      url_label: "AJ / DOI"
+      homepage_selected: true
+      contribution: "Explainable AI analysis of deep learning models for exoplanet atmospheric retrieval."
+
+    - authors: "<strong>Yip, K. H.</strong>, Changeat, Q., Edwards, B., Morvan, M., Chubb, K. L., Tsiaras, A., ... & Tinetti, G."
+      year: "2021"
+      title: "On the Compatibility of Ground-based and Space-based Data: WASP-96 b, an Example"
+      venue: "The Astronomical Journal (AJ), 161(1), 4"
+      url: "https://doi.org/10.3847/1538-3881/abc179"
+      url_label: "DOI / AJ"
+
+    - authors: "Abroshan, M., <strong>Yip, K. H.</strong>, Tekin, C., & van der Schaar, M."
+      year: "2021"
+      title: "Conservative Policy Construction Using Variational Autoencoders for Logged Data with Missing Values"
+      venue: "arXiv e-prints, arXiv:2109.03747 [cs.LG]"
+      url: "https://arxiv.org/abs/2109.03747"
+      url_label: "arXiv"
+
+    - authors: "Edwards, B., Changeat, Q., Mori, M., Anisman, L. O., Morvan, M., <strong>Yip, K. H.</strong>, ... & Tinetti, G."
+      year: "2021"
+      title: "Hubble WFC3 Spectroscopy of the Habitable-zone Super-Earth LHS 1140 b"
+      venue: "The Astronomical Journal (AJ), 161(1), 44"
+      url: "https://doi.org/10.3847/1538-3881/abc6a5"
+      url_label: "DOI"
+
+    - authors: "Edwards, B., Changeat, Q., <strong>Yip, K. H.</strong>, Tsiaras, A., Taylor, J., Akhtar, B., ... & Tennyson, J."
+      year: "2021"
+      title: "Original Research By Young Twinkle Students (ORBYTS): Ephemeris Refinement of Transiting Exoplanets"
+      venue: "Monthly Notices of the Royal Astronomical Society (MNRAS), 504(4), 5671–5684"
+      url: "https://doi.org/10.1093/mnras/staa1245"
+      url_label: "DOI"
+
+- year: 2020
+  items:
+    - authors: "<strong>Yip, K. H.</strong>, Tsiaras, A., Waldmann, I. P., & Tinetti, G."
+      year: "2020"
+      title: "Integrating Light Curve and Atmospheric Modeling of Transiting Exoplanets"
+      venue: "The Astronomical Journal (AJ), 160(4), 171"
+      url: "https://doi.org/10.3847/1538-3881/abaabc"
+      url_label: "DOI / AJ"
+
+    - authors: "<strong>Yip, K. H.</strong>, Nikolaou, N., Coronica, P., Tsiaras, A., Edwards, B., Changeat, Q., ... & Waldmann, I. P."
+      year: "2020"
+      title: "Pushing the Limits of Exoplanet Discovery via Direct Imaging with Deep Learning"
+      venue: "Machine Learning and Knowledge Discovery in Databases (ECML-PKDD), Springer, LNCS 11908"
+      url: "https://doi.org/10.1007/978-3-030-46133-1_20"
+      url_label: "Springer / arXiv"
+
+    - authors: "Pluriel, W., Whiteford, N., Edwards, B., Changeat, Q., <strong>Yip, K. H.</strong>, Baeyens, R., ... & Beaulieu, J.-P."
+      year: "2020"
+      title: "ARES. III. Unveiling the Two Faces of KELT-7 b with HST WFC3"
+      venue: "The Astronomical Journal (AJ), 160(3), 112"
+      url: "https://doi.org/10.3847/1538-3881/aba000"
+      url_label: "DOI"
