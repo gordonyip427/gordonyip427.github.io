@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Zero-dependency local preview builder & server for gordonkhy.com.
+Zero-dependency local preview builder & server for gordonyip427.github.io.
 Uses macOS/Linux built-in Ruby YAML parser + Python's http.server to render
 the Jekyll templates & _data/*.yml files into _site/ and serve at http://localhost:4000.
 
@@ -274,7 +274,7 @@ def free_port_if_busy(port: int):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Build and preview gordonkhy.com locally.")
+    parser = argparse.ArgumentParser(description="Build and preview gordonyip427.github.io locally.")
     parser.add_argument("--build-only", action="store_true", help="Build _site/ and exit")
     parser.add_argument("--port", type=int, default=4000, help="Port to serve on (default: 4000)")
     args = parser.parse_args()

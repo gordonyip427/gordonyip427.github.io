@@ -1,14 +1,14 @@
 # Personal Academic Website — Dr Gordon (Kai Hou) Yip
 
-Official personal and research group website for **Dr Gordon (Kai Hou) Yip** (Lecturer in Physics (AI), King's College London), hosted on GitHub Pages at **[www.gordonkhy.com](https://www.gordonkhy.com)**.
+Official academic and research group website for **Dr Gordon (Kai Hou) Yip** (Lecturer in Physics (AI), King's College London), hosted on GitHub Pages at **[https://gordonyip427.github.io](https://gordonyip427.github.io)**.
 
 ---
 
 ## 1. Quick Start: Running & Previewing Locally
 
-You do **not** need to install Ruby gems or wrestle with Jekyll version conflicts on macOS to preview this website locally. A zero-dependency local builder and preview server ([`serve.py`](serve.py)) is included using built-in macOS Python and Ruby.
+You do **not** need to install Ruby gems or manage a local Jekyll environment on macOS to preview this website. A zero-dependency local builder and live-reload preview server ([`serve.py`](serve.py)) is included using built-in macOS Python and Ruby.
 
-### Option A: Zero-Setup Local Preview (Recommended on macOS)
+### Option A: Zero-Setup Local Preview (Recommended)
 Open a terminal in this directory and run:
 
 ```bash
@@ -16,14 +16,14 @@ python3 serve.py
 ```
 
 Then open **[http://localhost:4000](http://localhost:4000)** in your browser.
-- To validate your YAML files and test-build the site into `_site/` without starting a server, run:
+- To validate your YAML files and build the static site into `_site/` without starting a server:
   ```bash
   python3 serve.py --build-only
   ```
-- While `serve.py` is running, refreshing your browser automatically rebuilds any edits to `_data/*.yml`, `pages/*`, `index.html`, or `assets/css/style.css`.
+- While `serve.py` is running, refreshing your browser automatically rebuilds any edits to `_config.yml`, `_data/*.yml`, `pages/*`, `index.html`, or `assets/*`.
 
 ### Option B: Standard Jekyll (Optional)
-Because the repository is standard Jekyll (and built automatically by GitHub Pages on push), you can also use Jekyll directly if you have a Ruby environment installed:
+Because the repository uses standard Jekyll templates and front matter (built automatically by GitHub Pages on push), you can also run Jekyll directly if you have a Ruby environment installed:
 
 ```bash
 bundle install
@@ -32,56 +32,91 @@ bundle exec jekyll serve
 
 ---
 
-## 2. Repository Structure (Where Everything Lives)
+## 2. Repository Structure
 
-Structured data lives in `_data/*.yml`, while introductory prose, application steps, and section layouts are written in `index.html` and `pages/*.md`:
+Structured academic records live in `_data/*.yml`, while page layouts and prose live in `index.html`, `_layouts/*.html`, and `pages/*`:
 
 ```text
 .
-├── _config.yml                 # Site-wide settings (name, KCL role, email, office, external profile links)
-├── CNAME                       # Custom domain configuration (www.gordonkhy.com)
-├── index.html                  # Homepage template (hero introduction, PhD invitation copy, and loops for _data/)
-├── serve.py                    # Zero-dependency local build & preview server (supports Liquid for/if/elsif/else)
+├── _config.yml                 # Site-wide settings (name, KCL role, email, office, external profile URLs)
+├── index.html                  # Full-screen homepage (folio bio card, PhD CTA, social links, 3D Ice Giant hero)
+├── serve.py                    # Zero-dependency local build & preview server (renders Liquid & YAML into _site/)
 ├── _data/
-│   ├── opportunities.yml       # PhD funding routes (general enquiries, K-CSC timeline) & postdoc/MSc/visiting info
-│   ├── news.yml                # Recent news & event announcements shown on the homepage
-│   ├── research.yml            # Research themes (pillars) and flagship initiatives (Ariel Mission, Ariel Data Challenge)
-│   ├── publications.yml        # Publications grouped by year (uses homepage_selected: true for homepage highlights)
-│   ├── cv.yml                  # Structured CV entries (appointments, education, teaching, service, leadership, awards, supervision)
-│   └── outreach.yml            # Media, UK Parliament (STEM for Britain), hackathons & public engagement
+│   ├── opportunities.yml       # PhD studentships (general enquiries, K-CSC timeline) & KCL project/visiting routes
+│   ├── research.yml            # Core research pillars (with responsive illustrations) & mission/software initiatives
+│   ├── publications.yml        # Refereed & unrefereed papers grouped by year
+│   ├── cv.yml                  # Appointments, education, teaching modules, leadership, service, and supervision
+│   └── news.yml                # Public engagement, media, and community milestones (rendered on /cv/)
 ├── pages/
-│   ├── research.md             # /research/ page (research theme details, ESA Ariel mission graphic, consortia)
-│   ├── opportunities.md        # /opportunities/ page (3-step application guide, PhD project areas, and funding routes)
-│   ├── publications.md         # /publications/ page (full bibliography grouped by year)
-│   ├── cv.md                   # /cv/ page (biography paragraph and loops over _data/cv.yml sections)
-│   ├── outreach.md             # /outreach/ page
+│   ├── research.md             # /research/ — Research themes & consortia/software/benchmarks
+│   ├── opportunities.md        # /opportunities/ — How to apply, supervisory style, PhD studentships & other routes
+│   ├── publications.md         # /publications/ — External bibliographic indexes (NASA ADS, arXiv) & full paper list
+│   ├── CV.md                   # /cv/ — Appointments, education, teaching, leadership, public engagement & supervision
 │   └── 404.html                # Custom 404 page
 ├── _layouts/
-│   ├── default.html            # Master header, navigation bar, and footer
-│   └── page.html               # Standard interior page header wrapper
+│   ├── default.html            # Master HTML shell, theme persistence (light/dark), mobile drawer & scroll reveal
+│   └── page.html               # Interior ledger-style page wrapper (/research/, /publications/, /opportunities/, /cv/)
 └── assets/
-    ├── css/style.css           # Site stylesheet (light/dark themes, responsive layout, print styles)
+    ├── css/
+    │   ├── style.css           # Primary stylesheet (Folio homepage & Ledger interior pages, light/dark themes)
+    │   └── rubble-ring.css     # Deep-space scrim and token overrides for the homepage 3D planet backdrop
+    ├── js/
+    │   └── rubble-ring/
+    │       ├── rubble-ring.js  # WebGL 3D Ice Giant, differential zonal bands & Keplerian rubble ring engine
+    │       └── vendor/
+    │           └── three.min.js # Bundled Three.js r147 runtime
     └── img/
         ├── profile.jpg         # Profile portrait
-        └── ink-wash-c/         # Ink-wash-c hero backdrops (light/dark) and research theme illustrations
+        ├── favicon.svg         # Site favicon
+        └── painted-paper/      # Responsive WebP artwork for the research pillars on /research/
 ```
-
-> **Note on data files vs. page templates:**
-> - **PhD recruitment:** The homepage PhD invitation (`index.html`), the 3-step application guide, and the PhD project areas (`pages/opportunities.md`) are written directly in those templates. The funding route cards (`phd_positions`) and postdoctoral/visiting opportunities (`other_opportunities`) are read from `_data/opportunities.yml`.
-> - **Research themes & illustrations:** `_data/research.yml` defines each research pillar (`short_summary` is rendered on the homepage; `summary` and `key_papers` are rendered on `/research/`). Both `index.html` and `pages/research.md` match `pillar.id` (`diff-tau`, `chexanet`, `black-box`) to select the corresponding painted-paper illustration, so if you rename a `pillar.id`, update the `if / elsif` condition in both templates as well.
-> - **CV sections:** Adding a new entry to an existing list in `_data/cv.yml` (`appointments`, `education`, `teaching`, `service`, `leadership`, `awards`, `supervision`, `skills`) updates `/cv/` automatically. If you add a brand-new top-level key to `_data/cv.yml`, also add a matching section loop in `pages/cv.md`.
 
 ---
 
-## 3. Common Updates Cheat Sheet
+## 3. 3D Ice Giant & Keplerian Rubble Ring Hero (`rubble-ring.js`)
 
-### A. Updating PhD Opportunities & Funding Deadlines
-1. **Homepage PhD invitation:** Edit Section `01 / PHD OPPORTUNITIES` in [`index.html`](index.html) to update the target entry cohort (e.g., `October 2027 entry`) or introductory copy.
-2. **Application steps & project areas:** Edit Sections `01` and `02` in [`pages/opportunities.md`](pages/opportunities.md).
-3. **Funding route details & K-CSC deadlines:** Edit `phd_positions:` in [`_data/opportunities.yml`](_data/opportunities.yml). Each entry's `status` field (e.g., `"Open for enquiries"`) is displayed next to its title on `/opportunities/`, and `details_checked` records when scheme deadlines were last verified.
+The homepage (`index.html`) features a real-time 3D WebGL background ([`assets/js/rubble-ring/rubble-ring.js`](assets/js/rubble-ring/rubble-ring.js)) styled by [`assets/css/rubble-ring.css`](assets/css/rubble-ring.css):
 
-### B. Adding a New Publication & Selecting Homepage Papers
-Open [`_data/publications.yml`](_data/publications.yml) and add an entry under the relevant `year:` (or add a new `- year: 2027` block at the top):
+- **Stationary Ice Giant with Flowing Zonal Bands:** The planetary sphere remains anchored on the right side of the viewport and tilted toward the left-hand bio card (`system.rotation.set(0.24, -0.18, 0.44)`), while a custom 4-tap 3D Simplex noise GLSL shader drives counter-streaming zonal wind bands and high-altitude methane-ice cirrus streaks across latitudes.
+- **Keplerian 3D Rubble Belt & Shepherd Moon Wakes:** Renders 3,200 instanced 3D dented icosahedral boulders (1,800 on narrow/mobile screens) orbiting at Keplerian velocities ($\omega \propto r^{-3/2}$), paired with a translucent multi-ringlet dust sheet (`fwidth` anti-aliased), mutual analytic planet/ring shadows, and an embedded ring-gap shepherd moon carving spiral density wakes.
+- **High-Efficiency 60 FPS Design:** Uses passive `pointer-events: none` with a gentle, heavily damped cursor parallax ($\pm 1.5^\circ$ sway), avoiding `OrbitControls` drag hijacking or per-frame projection matrix rebuilds.
+
+### Customizing the 3D Scene via `data-*` Attributes
+You can adjust the framing or rock count directly on the `<div data-rubble-ring>` element in [`index.html`](index.html):
+
+```html
+<div
+  class="rubble-ring rubble-ring--background rubble-ring--scrim"
+  data-rubble-ring
+  data-cam-dist="6.0"
+  data-offset-x="0.27"
+  data-rocks="3200"
+  data-parallax="true"
+  aria-hidden="true">
+</div>
+```
+
+| Attribute | Default | Description |
+| :--- | :--- | :--- |
+| `data-cam-dist` | `6.0` | Camera distance from the planet center (`6.0` = `1.75×` hero close-up; `7.6` = medium-close; `4.7` = macro flyby). |
+| `data-offset-x` | `0.27` | Horizontal frustum shift placing the planet on the right side of desktop viewports (`>= 900px`). |
+| `data-rocks` | `3200` | Number of instanced 3D boulders in the ring belt (automatically defaults to `1800` below `900px` width). |
+| `data-parallax` | `true` | Enables subtle ambient cursor parallax while keeping the planet anchored. |
+
+---
+
+## 4. Common Content Updates Cheat Sheet
+
+### A. Updating Profile Links or Contact Info
+Edit [`_config.yml`](_config.yml) under `author:`. Changes to `role`, `institution`, `office`, `email`, `google_scholar`, `github`, `linkedin`, `kcl_profile`, or `ads_library` automatically propagate across the homepage and interior pages.
+
+### B. Updating PhD Opportunities & Funding Deadlines
+1. **Homepage PhD line:** Edit `<p class="hero-phd-line">` in [`index.html`](index.html) (e.g., to update `October 2027 entry`).
+2. **Application guidance & supervisory style:** Edit Section `01` in [`pages/opportunities.md`](pages/opportunities.md).
+3. **Studentship routes & K-CSC timelines:** Edit `phd_positions:` and `other_opportunities:` in [`_data/opportunities.yml`](_data/opportunities.yml).
+
+### C. Adding a New Publication
+Open [`_data/publications.yml`](_data/publications.yml) and add an entry under the relevant `year:` block (or create a new `- year: 2027` block at the top):
 
 ```yaml
 - year: 2026
@@ -94,43 +129,29 @@ Open [`_data/publications.yml`](_data/publications.yml) and add an entry under t
       url_label: "DOI"
 ```
 
-- **To feature a paper in "Selected publications" on the homepage:**
-  Set `homepage_selected: true` (setting `selected: true` alone will **not** place a paper on the homepage) and include `short_venue` and `contribution`:
-  ```yaml
-      short_venue: "Yip et al., MNRAS (2026)"
-      homepage_selected: true
-      contribution: "One-sentence summary of what the paper contributes."
-  ```
-  Keep the homepage selection small (typically 3 papers, one per research theme); `/publications/` displays the full record.
+### D. Updating Research Themes or Mission Initiatives
+Open [`_data/research.yml`](_data/research.yml):
+- `pillars:` controls the illustrated research theme rows in Section `01` of `/research/`.
+- `initiatives:` controls the consortia, software packages, and benchmarks in Section `02` of `/research/`.
 
-### C. Adding a News Highlight on the Homepage
-Open [`_data/news.yml`](_data/news.yml) and add a new item at the top of the file:
-
-```yaml
-- date: "3 Nov 2026"
-  badge: "Community event"
-  title: "Headline of the announcement"
-  summary: "1–2 sentence summary of the event, paper, or milestone."
-  link: "https://..." # optional; omit if there is no external link
-```
-
-### D. Updating Your CV or Profile Photo
-- **Web CV:** Edit [`_data/cv.yml`](_data/cv.yml) (and the opening biography paragraph in [`pages/cv.md`](pages/cv.md)).
-- **Profile Photo:** Replace `assets/img/profile.jpg`.
+### E. Updating Your CV, Supervision, or Public Engagement
+- **Appointments, education, teaching, leadership, service & supervision:** Edit [`_data/cv.yml`](_data/cv.yml).
+- **Public engagement & community milestones:** Edit [`_data/news.yml`](_data/news.yml) (rendered under Section `03 · Leadership & public engagement` on `/cv/`).
+- **Portrait photo:** Replace `assets/img/profile.jpg`.
 
 ---
 
-## 4. Verifying & Publishing Changes (`www.gordonkhy.com`)
+## 5. Building & Publishing (`https://gordonyip427.github.io`)
 
-1. Build and verify locally:
+1. Verify that all YAML files parse cleanly and build into `_site/`:
    ```bash
    python3 serve.py --build-only
    ```
-2. Check your current branch and push to the branch configured for GitHub Pages in this repository:
+2. Stage, commit, and push to `master`:
    ```bash
    git status -sb
    git add -A
    git commit -m "Update website content"
-   git push origin HEAD
+   git push origin master
    ```
-   GitHub Pages builds from the repository's configured default/Pages branch and deploys to **[https://www.gordonkhy.com](https://www.gordonkhy.com)**.
+   GitHub Pages automatically builds from `master` and publishes to **[https://gordonyip427.github.io](https://gordonyip427.github.io)**.
