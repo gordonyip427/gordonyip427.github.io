@@ -5,8 +5,10 @@ description: "Dr Gordon (Kai Hou) Yip, Lecturer in Physics (AI) at King's Colleg
 permalink: /
 ---
 
-<div class="hero-screen">
-  <div class="hero-scrim" aria-hidden="true"></div>
+<link rel="stylesheet" href="/assets/css/rubble-ring.css?v=20261101f">
+
+<div class="hero-screen hero-screen--rubble">
+  <div class="rubble-ring rubble-ring--background rubble-ring--scrim" data-rubble-ring aria-hidden="true"></div>
 
   <header class="top-header">
     <a class="brand-link active" href="/" aria-current="page">{{ site.author.short_name }}</a>
@@ -96,3 +98,6 @@ permalink: /
     <span>Room S7.20, Strand Campus, London WC2R 2LS &middot; <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> &middot; <a href="https://www.kcl.ac.uk/terms" target="_blank" rel="noopener">Terms &amp; privacy</a></span>
   </footer>
 </div>
+
+<script src="/assets/js/rubble-ring/vendor/three.min.js"></script>
+<script src="/assets/js/rubble-ring/rubble-ring.js?v=20261101f"></script>

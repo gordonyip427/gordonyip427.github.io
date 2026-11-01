@@ -1,0 +1,74 @@
+/* Rubble Ring — planet background styles */
+.rubble-ring {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 70% 40%, #0c1322 0%, #060a14 70%);
+}
+.rubble-ring__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Full-page fixed background that sits passively behind landing page content */
+.rubble-ring--background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Darken the left side on desktop (and lower half on mobile) so text stays readable over the scene */
+.rubble-ring--scrim::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(3, 5, 11, 0.65) 0%, rgba(3, 5, 11, 0.20) 60%, rgba(3, 5, 11, 0) 100%);
+}
+@media (max-width: 899px) {
+  .rubble-ring--scrim::after {
+    background: linear-gradient(180deg, rgba(3, 5, 11, 0) 20%, rgba(3, 5, 11, 0.72) 58%, rgba(3, 5, 11, 0.88) 100%);
+  }
+}
+
+/* No WebGL fallback: plain space background */
+.rubble-ring--no-webgl {
+  background: radial-gradient(ellipse at 70% 40%, #0c1322 0%, #060a14 70%);
+}
+
+/* Disable full-screen SVG feTurbulence overlay and per-frame backdrop-filter blur over the WebGL canvas */
+body:has(.hero-screen--rubble)::before {
+  display: none;
+}
+
+/* Landing page integration: keep all layout/typography unchanged while adapting
+   the hero screen tokens to the deep-space backdrop in both light and dark modes */
+.hero-screen.hero-screen--rubble {
+  --bg: #060a14;
+  --surface: rgba(12, 19, 34, 0.84);
+  --surface-wash: rgba(18, 28, 48, 0.84);
+  --ink: #F5F5F5;
+  --ink-secondary: #D4DCE8;
+  --ink-muted: #9BA8BC;
+  --accent: #8CC9D5;
+  --accent-bg: rgba(18, 28, 48, 0.84);
+  --rule: rgba(169, 181, 199, 0.18);
+  --rule-strong: rgba(169, 181, 199, 0.28);
+  --hero-heading-gradient: linear-gradient(90deg, #FFFFFF 0%, #9BA8BC 100%);
+  --nav-pill-bg: rgba(6, 10, 20, 0.78);
+  --nav-pill-border: rgba(169, 181, 199, 0.24);
+
+  background: transparent;
+  background-image: none;
+  color: var(--ink);
+}
+
+.hero-screen--rubble .top-nav-pill,
+.hero-screen--rubble .mobile-menu-btn,
+.hero-screen--rubble .icon-link {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
