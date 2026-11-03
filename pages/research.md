@@ -48,7 +48,7 @@ permalink: /research/
     {% for item in site.data.research.initiatives %}
     <li class="one-line-item">
       <span class="item-text">
-        <strong>{{ item.title }}.</strong> {{ item.role }}{% if item.period %} ({{ item.period }}){% endif %}.{% if item.summary %} {{ item.summary }}{% endif %}
+        <strong>{{ item.title }}.</strong>{% if item.role or item.period %} {{ item.role }}{% if item.period %} ({{ item.period }}){% endif %}.{% endif %}{% if item.summary %} {{ item.summary }}{% endif %}
       </span>
       {% if item.url %}
       <span class="item-links">
