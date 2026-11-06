@@ -483,7 +483,8 @@ body.menu-open .mobile-drawer-nav a {
   font-weight: 600;
   padding: 8px 12px;
   border-radius: 8px;
-  transition: opacity 300ms var(--ease-base), background-color 300ms var(--ease-base), transform 500ms var(--ease-base);
+  border: 1px solid transparent;
+  transition: opacity 300ms var(--ease-base), background-color 300ms var(--ease-base), border-color 300ms var(--ease-base), color 300ms var(--ease-base), transform 500ms var(--ease-base);
 }
 .cta-button:hover,
 .cta-button:focus-visible {
@@ -492,6 +493,18 @@ body.menu-open .mobile-drawer-nav a {
 }
 .cta-button:active {
   transform: scale(0.98);
+}
+
+.cta-button--secondary {
+  background: var(--nav-pill-bg);
+  color: var(--ink);
+  border: 1px solid var(--rule-strong);
+}
+.cta-button--secondary:hover,
+.cta-button--secondary:focus-visible {
+  opacity: 1;
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .icon-bar {
@@ -851,6 +864,189 @@ body.menu-open .mobile-drawer-nav a {
   margin: 0;
 }
 
+/* ==========================================================================
+   3. MODERN PORTFOLIO COMPONENTS (Hero Pills, System Cards & Track Switcher)
+   ========================================================================== */
+
+/* Hero 3-Pill Flagship Highlight Bar */
+.hero-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 24px;
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: var(--nav-pill-bg);
+  border: 1px solid var(--rule-strong);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+  transition: border-color 300ms var(--ease-base), color 300ms var(--ease-base), transform 500ms var(--ease-base);
+}
+.hero-pill:hover,
+.hero-pill:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.hero-pill-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--accent);
+  padding-right: 8px;
+  border-right: 1px solid var(--rule-strong);
+}
+
+/* Flagship Systems, Featured Papers & Capabilities Grids */
+.systems-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.featured-pubs-grid,
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.system-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--rule-strong);
+  transition: border-color 300ms var(--ease-base), transform 500ms var(--ease-base);
+}
+.system-card:hover {
+  border-color: var(--accent);
+}
+
+.system-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.system-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+}
+
+.system-title {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin: 0;
+  text-wrap: balance;
+}
+
+.system-role {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+.system-summary {
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--ink-secondary);
+  margin: 0;
+  text-wrap: pretty;
+}
+.system-summary a {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.system-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+/* Interactive 2-Tab Audience Switcher on Collaborate Page */
+.collab-tabs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0 0 48px;
+}
+
+.collab-tab-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  text-align: left;
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--rule-strong);
+  color: var(--ink-secondary);
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: border-color 300ms var(--ease-base), background-color 300ms var(--ease-base), color 300ms var(--ease-base), transform 500ms var(--ease-base);
+}
+.collab-tab-btn:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+.collab-tab-btn.is-active {
+  background: var(--bg);
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+  color: var(--ink);
+}
+
+.collab-tab-title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.collab-tab-btn.is-active .collab-tab-title {
+  color: var(--accent);
+}
+
+.collab-tab-sub {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--ink-muted);
+}
+
+.collab-panel[hidden] {
+  display: none !important;
+}
+
 /* Subpage Footer */
 .subpage-footer {
   position: relative;
@@ -901,9 +1097,21 @@ body.menu-open .mobile-drawer-nav a {
   .ledger-header {
     position: static;
   }
+  .systems-grid {
+    grid-template-columns: 1fr;
+  }
+  .featured-pubs-grid,
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 720px) {
+  .collab-tabs {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
   .top-header {
     padding: 16px 16px 0;
     position: relative;

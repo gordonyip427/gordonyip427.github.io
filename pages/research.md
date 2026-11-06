@@ -1,17 +1,49 @@
 ---
 layout: page
-title: "Research & the Ariel mission"
-eyebrow: "Research programme · King's College London"
-subtitle: "Statistical inference, neural emulation, and community benchmarks for exoplanet spectroscopy."
-description: "Research themes of Dr Gordon (Kai Hou) Yip's group at King's College London: atmospheric retrieval and Bayesian inference, planetary atmosphere emulation, and interpreting and testing scientific AI."
+title: "Research, benchmarks & space systems"
+eyebrow: "Scientific AI & space systems"
+subtitle: "Physics-informed neural surrogates, simulation-based inference, and international evaluation benchmarks for physical systems and space missions."
+description: "Research themes and ML systems of Dr Gordon (Kai Hou) Yip: simulation-based inference, physics-informed neural surrogates, trustworthy AI evaluation, the ESA Ariel mission, and the Ariel Data Challenge."
 permalink: /research/
 ---
 
-<!-- 01 / RESEARCH THEMES -->
+<!-- 01 / FLAGSHIP SYSTEMS, BENCHMARKS & MISSIONS (3-CARD SPOTLIGHT) -->
 <section class="ledger-block">
   <div class="ledger-header">
-    <span class="block-index">01 &middot; Core programme</span>
-    <h2 class="block-heading">Research themes</h2>
+    <span class="block-index">01 &middot; Systems &amp; missions</span>
+    <h2 class="block-heading">Flagship benchmarks, software &amp; missions</h2>
+  </div>
+  <div>
+    <div class="systems-grid">
+      {% for sys in site.data.research.featured_systems %}
+      <article class="system-card">
+        <div class="system-card-top">
+          <span class="system-badge">{{ sys.badge }}</span>
+          <h3 class="system-title">{{ sys.title }}</h3>
+          <p class="system-role">{{ sys.role }}</p>
+        </div>
+        <p class="system-summary">{{ sys.summary }}</p>
+        <div class="system-links">
+          {% if sys.url %}
+          <a class="pill-link" href="{{ sys.url }}" target="_blank" rel="noopener">{{ sys.url_label }} &nearr;</a>
+          {% endif %}
+          {% if sys.extra_links %}
+          {% for link in sys.extra_links %}
+          <a class="pill-link" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }} &nearr;</a>
+          {% endfor %}
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- 02 / RESEARCH THEMES -->
+<section class="ledger-block">
+  <div class="ledger-header">
+    <span class="block-index">02 &middot; Core programme</span>
+    <h2 class="block-heading">Scientific AI &amp; methodology</h2>
   </div>
   <ul class="one-line-list">
     {% for pillar in site.data.research.pillars %}
@@ -31,6 +63,13 @@ permalink: /research/
       <div class="research-row-main">
         <div class="item-text">
           <strong>{{ pillar.title }}.</strong> {{ pillar.linked_summary }}
+          {% if pillar.tags %}
+          <div class="timeline-inline">
+            {% for tag in pillar.tags %}
+            <span class="timeline-chip">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
         </div>
       </div>
     </li>
@@ -38,24 +77,21 @@ permalink: /research/
   </ul>
 </section>
 
-<!-- 02 / CONSORTIA, SOFTWARE & BENCHMARKS -->
+<!-- 03 / COMMUNITY & TRAINING -->
 <section class="ledger-block">
   <div class="ledger-header">
-    <span class="block-index">02 &middot; Missions &amp; open source</span>
-    <h2 class="block-heading">Consortia, software &amp; benchmarks</h2>
+    <span class="block-index">03 &middot; Community</span>
+    <h2 class="block-heading">Hackathons &amp; training</h2>
   </div>
   <ul class="one-line-list">
-    {% for item in site.data.research.initiatives %}
     <li class="one-line-item">
-      <span class="item-text">
-        <strong>{{ item.title }}.</strong>{% if item.role or item.period %} {{ item.role }}{% if item.period %} ({{ item.period }}){% endif %}.{% endif %}{% if item.summary %} {{ item.summary }}{% endif %}
-      </span>
-      {% if item.url %}
-      <span class="item-links">
-        <a class="pill-link" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.url_label }} &nearr;</a>
-      </span>
-      {% endif %}
+      <div class="item-text">
+        <strong>ExoHack.</strong> Organising multi-university hackathons training researchers and students in scientific machine learning, uncertainty quantification, and space mission data pipelines.
+        <div class="timeline-inline">
+          <span class="timeline-chip">European university hackathons</span>
+          <span class="timeline-chip">Space mission AI training</span>
+        </div>
+      </div>
     </li>
-    {% endfor %}
   </ul>
 </section>

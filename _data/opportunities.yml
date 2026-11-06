@@ -1,3 +1,22 @@
+advisory_tracks:
+  - title: "AI for Science & Physics-Informed Emulation"
+    description: >-
+      Joint research and knowledge exchange on physics-informed neural surrogates and differentiable forward models for accelerating complex fluid, radiative, and chemical simulations.
+    tags: ["Neural surrogates", "Physics-informed ML", "Differentiable physics", "3D simulation emulation"]
+    email_subject: "Collaboration%20enquiry%20(AI4Science)"
+
+  - title: "Model Evaluation, Benchmarking & Uncertainty"
+    description: >-
+      Collaborating on domain-grounded ML evaluation benchmarks, out-of-distribution diagnostics, and calibrated uncertainty quantification, building on our experience running the NeurIPS and Kaggle Ariel Data Challenge.
+    tags: ["Benchmark design", "Calibrated uncertainty", "Out-of-distribution testing", "Explainable AI"]
+    email_subject: "Collaboration%20enquiry%20(Model%20Evaluation)"
+
+  - title: "Space Systems & Remote Sensing Pipelines"
+    description: >-
+      Research collaboration on machine learning pipelines for spaceborne and remote-sensing instruments, including sensor detrending, non-stationary noise mitigation, and Bayesian retrieval.
+    tags: ["Space payload ML", "Sensor calibration", "Simulation-based inference", "Spectral retrieval"]
+    email_subject: "Collaboration%20enquiry%20(Space%20Systems)"
+
 phd_positions:
   - code: "KCL NMES Faculty"
     title: "King's NMES Faculty PhD studentship (UK Home students)"

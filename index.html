@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-description: "Dr Gordon (Kai Hou) Yip, Lecturer in Physics (AI) at King's College London. Research in Bayesian inference, differentiable atmospheric models, atmospheric emulation, and scientific AI for JWST and the ESA Ariel mission."
+description: "Dr Gordon (Kai Hou) Yip — Lecturer in Physics (AI) at King's College London, ML Lead Coordinator for the ESA Ariel Space Mission, and PI of the Ariel Data Challenge. Physics-informed neural surrogates, simulation-based inference, and scientific AI."
 permalink: /
 ---
 
@@ -15,7 +15,7 @@ permalink: /
     <nav class="top-nav top-nav-pill" id="primaryNav" aria-label="Primary">
       <a href="/research/">Research</a>
       <a href="/publications/">Publications</a>
-      <a href="/opportunities/">Opportunities</a>
+      <a href="/opportunities/">Collaborate</a>
       <a href="/cv/">About &amp; CV</a>
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme" title="Switch color theme">
         <span class="theme-label" id="themeLabel">Light</span>
@@ -36,7 +36,7 @@ permalink: /
       <a href="/" class="active" aria-current="page" style="--item-idx: 0;">Home</a>
       <a href="/research/" style="--item-idx: 1;">Research</a>
       <a href="/publications/" style="--item-idx: 2;">Publications</a>
-      <a href="/opportunities/" style="--item-idx: 3;">Opportunities</a>
+      <a href="/opportunities/" style="--item-idx: 3;">Collaborate</a>
       <a href="/cv/" style="--item-idx: 4;">About &amp; CV</a>
     </nav>
   </aside>
@@ -47,30 +47,45 @@ permalink: /
         <img src="{{ site.author.image }}" alt="Portrait of {{ site.author.name }}, {{ site.author.role }} at {{ site.author.institution }}" class="portrait" width="64" height="64">
         <div>
           <h1 class="hero-name">{{ site.author.short_name }}</h1>
-          <p class="hero-role">{{ site.author.role }} &middot; {{ site.author.institution }}</p>
+          <p class="hero-role">{{ site.author.role }} &middot; {{ site.author.institution }}<br>ML Lead Coordinator, ESA Ariel Mission &middot; PI, Ariel Data Challenge</p>
         </div>
       </div>
 
       <p class="hero-bio">
-        I work at the intersection of astrophysics and machine learning, designing physics informed neural emulators and Bayesian retrieval frameworks for exoplanet spectroscopy. Alongside my group at King's, I serve as Machine Learning Lead Coordinator for the ESA Ariel Space Mission and Principal Investigator of the Ariel Data Challenge, publishing as Kai Hou Yip.
+        I build physics-informed neural surrogates, simulation-based inference frameworks, and uncertainty-calibrated machine learning pipelines for physical systems and space instrumentation. At King's College London I lead a scientific AI group, coordinate the Machine Learning Working Group at the ESA Ariel Space Mission, and direct the international Ariel Data Challenge, publishing as Kai Hou Yip.
       </p>
 
       <hr class="folio-divider">
 
-      <p class="hero-phd-line">
-        I welcome PhD enquiries for October 2027 entry in physics, astronomy, computer science, or mathematics; a finished research proposal is not required.
-      </p>
+      <div class="hero-highlights" aria-label="Flagship roles and systems">
+        <a href="/research/" class="hero-pill">
+          <span class="hero-pill-tag">Mission</span>
+          <span>ESA Ariel ML Working Group</span>
+        </a>
+        <a href="/research/" class="hero-pill">
+          <span class="hero-pill-tag">Benchmark</span>
+          <span>PI, Ariel Data Challenge</span>
+        </a>
+        <a href="https://taurex.space" target="_blank" rel="noopener" class="hero-pill">
+          <span class="hero-pill-tag">Open Source</span>
+          <span>TauREx Framework &nearr;</span>
+        </a>
+      </div>
 
       <div class="hero-actions">
-        <a href="/opportunities/" class="cta-button">
-          <span>Explore PhD opportunities</span>
+        <a href="/research/" class="cta-button">
+          <span>Explore research &amp; systems</span>
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+        <a href="/opportunities/" class="cta-button cta-button--secondary">
+          <span>Collaborate &amp; PhD opportunities</span>
           <span aria-hidden="true">&rarr;</span>
         </a>
 
         <div class="icon-bar" aria-label="Academic and social links">
           <!-- 1. Google Scholar -->
           <a class="icon-link" href="{{ site.author.google_scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
-            <svg viewBox="0 0 256 256" aria-hidden="true"><path d="m251.76 88.94l-120-64a8 8 0 0 0-7.52 0l-120 64a8 8 0 0 0 0 14.12L32 117.87v48.42a15.9 15.9 0 0 0 4.06 10.65C49.16 191.53 78.51 216 128 216a130 130 0 0 0 48-8.76V240a8 8 0 0 0 16 0v-40.49a115.6 115.6 0 0 0 27.94-22.57a15.9 15.9 0 0 0 4.06-10.65v-48.42l27.76-14.81a8 8 0 0 0 0-14.12M128 200c-43.27 0-68.72-21.14-80-33.71V126.4l76.24 40.66a8 8 0 0 0 7.52 0L176 143.47v46.34c-12.6 5.88-28.48 10.19-48 10.19m80-33.75a97.8 97.8 0 0 1-16 14.25v-45.57l16-8.53Zm-20-47.31l-.22-.13l-56-29.87a8 8 0 0 0-7.52 14.12L171 128l-43 22.93L25 96l103-54.93L231 96Z"/></svg>
+            <svg viewBox="0 0 256 256" aria-hidden="true"><path d="m251.76 88.94l-120-64a8 8 0 0 0-7.52 0l-120 64a8 8 0 0 0 0 14.12L32 117.87v48.42a15.9 15.9 0 0 0 4.06 10.65C49.16 191.53 78.51 216 128 216a130 130 0 0 0 48-8.76V240a8 8 0 0 0 16 0v-40.49a115.6 115.6 0 0 0 27.94-22.57a115.9 15.9 0 0 0 4.06-10.65v-48.42l27.76-14.81a8 8 0 0 0 0-14.12M128 200c-43.27 0-68.72-21.14-80-33.71V126.4l76.24 40.66a8 8 0 0 0 7.52 0L176 143.47v46.34c-12.6 5.88-28.48 10.19-48 10.19m80-33.75a97.8 97.8 0 0 1-16 14.25v-45.57l16-8.53Zm-20-47.31l-.22-.13l-56-29.87a8 8 0 0 0-7.52 14.12L171 128l-43 22.93L25 96l103-54.93L231 96Z"/></svg>
           </a>
           <!-- 2. GitHub -->
           <a class="icon-link" href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
@@ -94,8 +109,8 @@ permalink: /
   </main>
 
   <footer class="hero-footer">
-    <span>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} &middot; Department of Physics, {{ site.author.institution }}</span>
-    <span>Room S7.20, Strand Campus, London WC2R 2LS &middot; <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> &middot; <a href="https://www.kcl.ac.uk/terms" target="_blank" rel="noopener">Terms &amp; privacy</a></span>
+    <span>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} &middot; London, UK</span>
+    <span><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> &middot; <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a> &middot; <a href="{{ site.author.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a> &middot; <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" target="_blank" rel="noopener">LinkedIn</a></span>
   </footer>
 </div>
 

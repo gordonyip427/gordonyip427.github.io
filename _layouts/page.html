@@ -8,7 +8,7 @@ layout: default
     <nav class="top-nav top-nav-pill" id="primaryNav" aria-label="Primary">
       <a href="/research/" class="{% if page.url contains '/research' %}active{% endif %}">Research</a>
       <a href="/publications/" class="{% if page.url contains '/publications' %}active{% endif %}">Publications</a>
-      <a href="/opportunities/" class="{% if page.url contains '/opportunities' %}active{% endif %}">Opportunities</a>
+      <a href="/opportunities/" class="{% if page.url contains '/opportunities' %}active{% endif %}">Collaborate</a>
       <a href="/cv/" class="{% if page.url contains '/cv' %}active{% endif %}">About &amp; CV</a>
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch color theme" title="Switch color theme">
         <span class="theme-label" id="themeLabel">Light</span>
@@ -36,7 +36,7 @@ layout: default
     <a href="/" style="--item-idx: 0;">Home</a>
     <a href="/research/" class="{% if page.url contains '/research' %}active{% endif %}" style="--item-idx: 1;">Research</a>
     <a href="/publications/" class="{% if page.url contains '/publications' %}active{% endif %}" style="--item-idx: 2;">Publications</a>
-    <a href="/opportunities/" class="{% if page.url contains '/opportunities' %}active{% endif %}" style="--item-idx: 3;">Opportunities</a>
+    <a href="/opportunities/" class="{% if page.url contains '/opportunities' %}active{% endif %}" style="--item-idx: 3;">Collaborate</a>
     <a href="/cv/" class="{% if page.url contains '/cv' %}active{% endif %}" style="--item-idx: 4;">About &amp; CV</a>
   </nav>
 </aside>
@@ -50,6 +50,6 @@ layout: default
 </main>
 
 <footer class="subpage-footer">
-  <span>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} &middot; Department of Physics, {{ site.author.institution }}</span>
-  <span>Room S7.20, Strand Campus, London WC2R 2LS &middot; <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> &middot; <a href="https://www.kcl.ac.uk/terms" target="_blank" rel="noopener">Terms &amp; privacy</a></span>
+  <span>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} &middot; London, UK</span>
+  <span><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> &middot; <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a> &middot; <a href="{{ site.author.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a> &middot; <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" target="_blank" rel="noopener">LinkedIn</a></span>
 </footer>

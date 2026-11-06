@@ -1,3 +1,21 @@
+capabilities:
+  - domain: "AI for Science & Neural Emulation"
+    badge: "Surrogates & Physics"
+    summary: "Physics-informed neural surrogates that accelerate 3D fluid, radiative transfer, and chemical network simulations by orders of magnitude."
+    tags: ["Neural surrogates", "Physics-informed ML", "3D simulation emulation", "Differentiable models"]
+  - domain: "Probabilistic ML & Inverse Problems"
+    badge: "Bayesian Inference"
+    summary: "Simulation-Based Inference (SBI), variational inference, and normalising flows for rapid, amortised posterior estimation from noisy sensor data."
+    tags: ["Simulation-based inference", "Normalising flows", "Variational inference", "State-space filtering"]
+  - domain: "AI Evaluation, Safety & Reliability"
+    badge: "Benchmarks & UQ"
+    summary: "International benchmark architecture (NeurIPS & Kaggle), calibrated uncertainty quantification, out-of-distribution diagnostics, and explainable AI."
+    tags: ["NeurIPS & Kaggle benchmarks", "Uncertainty calibration", "OOD diagnostics", "Explainable AI"]
+  - domain: "Space Systems & Open-Source Software"
+    badge: "Missions & Systems"
+    summary: "Coordinating the ESA Ariel Machine Learning Working Group and co-developing the modular TauREx Python framework for forward modelling and retrieval."
+    tags: ["ESA Ariel ML", "TauREx framework", "PyTorch & JAX", "Distributed HPC"]
+
 appointments:
   - role: "Lecturer in Physics (AI)"
     institution: "King's College London"
@@ -48,8 +66,8 @@ leadership:
   - title: "Machine Learning Lead Coordinator, ESA Ariel Space Mission"
     period: "2020 to present"
 
-  - title: "Principal Investigator & Lead Organiser, The Ariel Data Challenge (NeurIPS, ECML PKDD & Kaggle)"
-    period: "2019 to present"
+  - title: "Principal Investigator & Lead Organiser, The Ariel Data Challenge (NeurIPS & Kaggle)"
+    period: "2022 to present"
 
 supervision:
   - name: "Vojteková & Tahseen"
